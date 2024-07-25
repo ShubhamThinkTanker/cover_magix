@@ -30,7 +30,7 @@ import { PasswordService } from '../../../Helper/password.service';
 import * as jwt from 'jsonwebtoken';
 import { config } from 'dotenv';
 import { AuthGuard } from '@nestjs/passport';
-import { GoogleStrategy } from 'Helper/passportConfig';
+
 config();
 
 @Controller('auth')
