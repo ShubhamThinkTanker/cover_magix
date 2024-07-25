@@ -29,8 +29,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd /var/www/html/cover_magix/backend
+            cd /var/www/html/cover_magix_2.0/cover_magix/backend
             git pull origin main
             npm install
-            npm run build
             pm2 restart your-nestjs-app
